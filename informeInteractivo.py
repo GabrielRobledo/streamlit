@@ -7,9 +7,7 @@ import numpy as np
 # Establecer configuración de la página
 st.set_page_config(page_title="Mi Reporte", layout="wide")
 
-#writer = pd.ExcelWriter('C:/ReportesPython/datos.xlsx')
-#df = pd.t('C:/Users/Gabriel/Desktop/datos.xlsx')
-df = pd.read_excel('C:/Users/Gabriel/Desktop/datos.xlsx', sheet_name='Hoja1')
+df = pd.read_excel('datos.xlsx', sheet_name='Hoja1')
 
 # Crear gráfico interactivo
 fig = px.bar(df, x='paises', y="poblacion")
