@@ -18,7 +18,7 @@ with col1:
     st.write("Listado de Paises y sus poblaciones")
     st.dataframe(df)
     st.text_input('Seleccionar Pais')
-    st.time_input('Periodo')
+    st.date_input('Periodo')
     st.button('Filtrar')
 
 with col2:
