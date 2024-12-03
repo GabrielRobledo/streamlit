@@ -17,6 +17,8 @@ col1, col2, col3 = st.columns(3)
 with col1:
     st.write("Listado de Paises y sus poblaciones")
     st.dataframe(df)
+    st.text_input('Ingresar Pais')
+    st.button('Filtrar')
 
 with col2:
     st.plotly_chart(fig)
